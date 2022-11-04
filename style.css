@@ -23,14 +23,14 @@ a:hover {
     cursor: pointer;
 }
 
-#page-loading-blocs-notifaction {
+/* #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
+} */
 
 .bloc {
     width: 100%;
@@ -259,7 +259,8 @@ a:hover {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover,
-blockquote {
+blockquote,
+d-bloc > p {
     color: rgba(0, 0, 0, 1);
 }
 
@@ -300,7 +301,7 @@ blockquote {
 
 .navbar {
     margin-bottom: 0;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .navbar-brand {
@@ -330,7 +331,7 @@ blockquote {
     padding-top: 2px;
     margin-right: -16px;
     float: right;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .nav > li {
@@ -343,9 +344,35 @@ blockquote {
     text-align: inherit;
 }
 
-.nav > li a:hover,
+/* .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+} */
+
+a:focus, a:hover, .navbar-toggle:focus  {
+    background: rgba(243, 151, 108, 0.5)!important;
+}
+
+.btn-atomic-tangerine:focus, .btn-atomic-tangerine:hover {
+    border: 2px solid black;
+}
+
+.scrollToTop:focus, .scrollToTop:hover {
+    color: #FFF!important;
+    background: rgba(0, 0, 0, .6)!important;
+}
+
+a.social {
+    display: block;
+    max-width: 48px;
+}
+
+a.social:focus {
+    background: #FFF!important;
+}
+
+a.social:hover {
+    background: #000!important;
 }
 
 .navbar-toggle {
@@ -370,7 +397,7 @@ blockquote {
 .nav-invert .navbar-brand {
     float: right;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 iframe {
@@ -566,6 +593,7 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
+    line-height: 50px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
@@ -828,10 +856,6 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
