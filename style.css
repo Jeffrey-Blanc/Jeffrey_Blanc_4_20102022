@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -133,7 +138,12 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, .6);
+}
+
+.fa:before {
+    display: flex;
+    justify-content: center;
 }
 
 .d-bloc .a-btn:hover,
@@ -248,7 +258,8 @@ a:hover {
 .l-bloc h4 a:hover,
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
-.l-bloc p a:hover {
+.l-bloc p a:hover,
+blockquote {
     color: rgba(0, 0, 0, 1);
 }
 
@@ -360,6 +371,11 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -677,7 +693,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.1em;
 }
 
 .tight-width-whitespace {
@@ -705,7 +721,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 1.6em;
     line-height: 1.4em;
 }
 
@@ -739,8 +755,13 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.orange {
+    color: #F3976C!important;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .portfolio-row {
@@ -753,7 +774,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 40px 40px 40px 40px;
 }
 
@@ -775,12 +796,12 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
