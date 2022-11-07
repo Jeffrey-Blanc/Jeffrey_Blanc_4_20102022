@@ -378,6 +378,8 @@ a.social:hover {
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
+    width: 48px;
+    height: 48px;
 }
 
 .navbar-toggle:hover {
@@ -554,8 +556,8 @@ button {
 }
 
 .scrollToTop {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     position: fixed;
     bottom: 20px;
     right: 20px;
